@@ -10,6 +10,9 @@
     --text-body-color: #000000;
     --font-family: 'Roboto', sans-serif;
 }
+header {
+    padding: 0;
+}
 
 #course-title {
     background-color: var(--primary-color);
@@ -40,7 +43,8 @@ nav a {
     color: var(--text-header-color);
     font-size: 1.5rem;
 }
-.main {
+
+main {
     position: relative;
 }
 

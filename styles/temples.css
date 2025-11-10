@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #000000;
+    --bg-color: #581845;
+}
+body {
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+header, footer {
+    background-color: #581845;
+    color: var(--primary-text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+/* Mobile view */
+#menu {
+    display: block;
+    font-size: 2rem;
+    padding: 0;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    margin-right: -5px;
+}
+
+#menu::before {
+    content: "≡";
+    color: var(--primary-text-color);
+    padding: .5rem;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    width: 100%;
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 50px;
+    z-index: 99;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    text-align: center;
+    padding: .9rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    text-align: center;
+}
+
+.navigation a:hover, .navigation .active {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+.navigation.show {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 2rem auto;
+    align-items: center;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+    color: var(--bg-color);
+}
+
+.album figure {
+    margin: 0;
+    border: 1px solid rgb(0 0 0 /0.1);
+    box-shadow: inset 0 0 10px rgb(0 0 0 /0.1);
+}
+.album figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: .9rem;
+}

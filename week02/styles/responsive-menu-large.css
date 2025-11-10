@@ -6,7 +6,7 @@ In most WDD courses there is a requirement to use a separate file. This part wou
 	h1 {
 		font-size: 2rem;
 	}
-	.navigation {
+	nav {
 		display: flex;
 	}
 	.navigation li {

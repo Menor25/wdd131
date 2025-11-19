@@ -18,12 +18,12 @@
         top: -60rem;
         left: 2.5rem;
         position: absolute;
-        background-color: color-mix(in srgb, var(--secondary-color), transparent 50%);
+        background-color: rgba(255, 255, 255, 0.5);
         opacity: 1;
         padding: 4rem 1rem 1rem 1rem;
         width: 15rem;
         border-radius: 1;
-        box-shadow: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     main .container .data h2, main .container .weather h2 {
         background-color: var(--primary-color);
@@ -39,12 +39,12 @@
         top: -30rem;
         right: -87rem;
         position: absolute;
-        background-color: color-mix(in srgb, var(--secondary-color), transparent 50%);
+        background-color: rgba(255, 255, 255, 0.5);
         opacity: 1;
         padding: 4rem 1rem 1rem 1rem;
         width: 15rem;
         border-radius: 1;
-        box-shadow: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .weather .weather-icon {
@@ -55,7 +55,7 @@
         width: 30px;
         height: 30px;
         display: inline-block;
-        background-image: url("../images/icons/1530391_weather_clouds_sun_sunny_icon.svg");
+        background-image: url("../images/icons/weather_clouds_icon.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;

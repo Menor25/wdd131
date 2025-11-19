@@ -1,0 +1,67 @@
+@media only screen and (min-width: 40em) {
+    main .hero {
+        position: relative;
+    }
+    main .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        position: absolute;
+
+    }
+    hr {
+        display: none;
+    }
+
+    main .container .data {
+        top: -60rem;
+        left: 2.5rem;
+        position: absolute;
+        background-color: color-mix(in srgb, var(--secondary-color), transparent 50%);
+        opacity: 1;
+        padding: 4rem 1rem 1rem 1rem;
+        width: 15rem;
+        border-radius: 1;
+        box-shadow: rgba(0, 0, 0, 0.1);
+    }
+    main .container .data h2, main .container .weather h2 {
+        background-color: var(--primary-color);
+        padding: .5rem;
+        position: absolute;
+        top: -.6rem;
+        left: -1rem;
+        width: 15rem;
+        color: var(--secondary-color);
+    }
+
+    main .container .weather {
+        top: -30rem;
+        right: -87rem;
+        position: absolute;
+        background-color: color-mix(in srgb, var(--secondary-color), transparent 50%);
+        opacity: 1;
+        padding: 4rem 1rem 1rem 1rem;
+        width: 15rem;
+        border-radius: 1;
+        box-shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    .weather .weather-icon {
+        display: none;
+    }
+    main .container .weather h2::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-image: url("../images/icons/1530391_weather_clouds_sun_sunny_icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 10px;
+        vertical-align: middle;
+        position: relative;
+        top: -2px;
+    }
+}

@@ -19,10 +19,9 @@
         left: 2.5rem;
         position: absolute;
         background-color: rgba(255, 255, 255, 0.5);
-        opacity: 1;
         padding: 4rem 1rem 1rem 1rem;
         width: 15rem;
-        border-radius: 1;
+        border-radius: 1px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     main .container .data h2, main .container .weather h2 {
@@ -40,10 +39,9 @@
         right: -87rem;
         position: absolute;
         background-color: rgba(255, 255, 255, 0.5);
-        opacity: 1;
         padding: 4rem 1rem 1rem 1rem;
         width: 15rem;
-        border-radius: 1;
+        border-radius: 1px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 

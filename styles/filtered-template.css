@@ -66,7 +66,7 @@ header {
     z-index: 99;
 }
 
-.navigation ul {
+nav ul {
     display: flex;
     flex-direction: column;
     list-style: none;

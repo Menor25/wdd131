@@ -37,9 +37,6 @@ header {
     width: 100%;
     /* border: 2px solid black; */
 }
-main {
-    flex: 1 0 auto;
-}
 /* Mobile view */
 #menu {
     display: block;
@@ -70,6 +67,8 @@ main {
 }
 
 .navigation ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     margin: 0 auto;
     max-width: 760px;
@@ -107,7 +106,8 @@ main {
 
 main {
     display: flex;
-    justify-content: center;
+    flex: 1 0 auto;
+    /* justify-content: center; */
     flex-direction: column;
     max-width: 800px;
     margin: 2rem auto;

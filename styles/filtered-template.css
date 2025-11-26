@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+:root {
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #000000;
+    --bg-color: #581845;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+header, footer {
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+main {
+    flex: 1 0 auto;
+}
+/* Mobile view */
+#menu {
+    display: block;
+    font-size: 2rem;
+    padding: 0;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    margin-right: -5px;
+}
+
+#menu::before {
+    content: "≡";
+    color: var(--primary-text-color);
+    padding: .5rem;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    width: 100%;
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 50px;
+    z-index: 99;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    text-align: center;
+    padding: .9rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    text-align: center;
+}
+
+.navigation a:hover, .navigation .active {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+.navigation.show {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 2rem auto;
+    align-items: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+    color: var(--bg-color);
+}
+.card-container .template-card {
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+.card-container .template-card p {
+    color: #000000;
+}
+
+.card-container .template-card p span{
+    color: var(--bg-color);
+    font-weight: 600;
+}
+
+
+.card-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: .9rem;
+}

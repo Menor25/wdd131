@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="Submit your product review">
+    <meta name="author" content="Theophilus Ajiri Menor">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="GET" action="review.html" class="form">
+            <fieldset>
+                <label>Product Name* 
+                    <select name="pname" id="pname" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="desktop">Desktop</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="smartphone">Smartphone</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Overall Rating*</legend>
+                <label>&star; <input type="radio" name="rating" id="rating" value="1" required></label>
+                <label>&star; &star; <input type="radio" name="rating" id="rating" value="2" required></label>
+                <label>&star; &star; &star; <input type="radio" name="rating" id="rating" value="3" required></label>
+                <label>&star; &star; &star; &star; <input type="radio" name="rating" id="rating" value="4" required></label>
+                <label>&star; &star; &star; &star; &star; <input type="radio" name="rating" id="rating" value="5" required></label>
+
+                <label>Date of Installation* <input type="date" name="date" id="date" required></label>
+            <div>
+                Which features did you find useful in the products?* <br>
+                (Click all that apply)
+            </div>
+            <label><input type="checkbox" name="features" value="design"> Design</label>
+             <label><input type="checkbox" name="features" value="durability"> Durability</label>
+             <label><input type="checkbox" name="features" value="ease"> Ease of use</label>
+             <label> <input type="checkbox" name="features" value="performance"> Performance</label>
+
+             <div>Written Review (Optional)</div>
+             <label>
+                <textarea name="review" id="review" cols="30" rows="10" placeholder="Write your review"></textarea>
+             </label>
+
+             <div>Your Name (Optional)</div>
+             <label><input type="text" name="fullname" id="fullname"></label>
+            </fieldset>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+     <footer>
+        <div class="copyright">
+            <p id="copyright">&copy; <span id="currentYear"></span> Theophilus Ajiri Menor, <span>Nigeria</span></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

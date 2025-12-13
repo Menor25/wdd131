@@ -1,0 +1,124 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+header, footer {
+    padding: .5rem 2%;
+    background-color: #483535;
+    text-align: center;
+    color: #fff;
+}
+header h1 {margin: 0;}
+
+main {
+    margin-top: 2rem;
+    padding: 0 2%;
+    min-height: 20rem;
+    background-color: #aba1a1;
+}
+
+main input[type="text"],
+main input[type="email"],
+main input[type="tel"],
+main input[type="url"],
+main input[type="date"],
+main input[type="number"],
+main select {
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 520px;
+    /* appearance: none; */
+}
+
+main input[type="radio"],
+main input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.product-name, .rating-container, .date-label input[type="date"], .feature-input, .review label{
+    margin-bottom: .75rem;
+}
+
+.product-name, .rating-label, .date, .features, .review, .name {
+    font-size: 1rem;
+}
+
+.rating-options {
+    display: flex;
+    gap: 20px;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.stars {
+    font-size: 1.5rem;
+    color: #000;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.rating-option input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 50%; 
+    background-color: #fff;
+    outline: none; 
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.rating-option input[type="radio"]:checked {
+    background-color: #e0e0e0;
+    border-width: 2px;
+    box-shadow: 0 0 0 5px #fff inset;
+}
+
+.features span {
+    font-style: italic;
+}
+.feature-input {
+    display: flex;
+    flex-direction: column;
+}
+.feature-input input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+.feature-input input[type="checkbox"]:checked {
+    background-color: #e0e0e0;
+    border-width: 2px;
+    box-shadow: 0 0 0 5px #fff inset;
+}
+.textarea {
+    width: 540px;
+}
+main input[type="submit"] {
+    border: none;
+    border-radius: 6px;
+    background-color: #483535;
+    color: #fff;
+    padding: .8rem;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+    width: 100%;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1rem;
+}

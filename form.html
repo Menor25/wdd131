@@ -17,40 +17,73 @@
     <main>
         <form method="GET" action="review.html" class="form">
             <fieldset>
-                <label>Product Name* 
+                <div class="product-name">Product Name*
+                <label> 
                     <select name="pname" id="pname" required>
                         <option value="" disabled selected>Select a Product ...</option>
                         <option value="laptop">Laptop</option>
                         <option value="desktop">Desktop</option>
                         <option value="tablet">Tablet</option>
                         <option value="smartphone">Smartphone</option>
+                         <option value="design">Design</option>
+                        <option value="cybersecurity">Cyber security</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturing</option>
                     </select>
                 </label>
-            </fieldset>
-            <fieldset>
-                <legend>Overall Rating*</legend>
-                <label>&star; <input type="radio" name="rating" id="rating" value="1" required></label>
-                <label>&star; &star; <input type="radio" name="rating" id="rating" value="2" required></label>
-                <label>&star; &star; &star; <input type="radio" name="rating" id="rating" value="3" required></label>
-                <label>&star; &star; &star; &star; <input type="radio" name="rating" id="rating" value="4" required></label>
-                <label>&star; &star; &star; &star; &star; <input type="radio" name="rating" id="rating" value="5" required></label>
+                </div>
+                <div class="rating-container">
+    <div class="rating-label">Overall Rating</div>
+        <div class="rating-options">
+            
+            <label class="rating-option">
+                <span class="stars">&star;</span>
+                <input type="radio" name="rating" value="1" required>
+            </label>
+            
+            <label class="rating-option">
+                <span class="stars">&star;&star;</span>
+                <input type="radio" name="rating" value="2" required>
+            </label>
+            
+            <label class="rating-option">
+                <span class="stars">&star;&star;&star;</span>
+                <input type="radio" name="rating" value="3" required>
+            </label>
+            
+            <label class="rating-option">
+                <span class="stars">&star;&star;&star;&star;</span>
+                <input type="radio" name="rating" value="4" required>
+            </label>
+            
+            <label class="rating-option">
+                <span class="stars">&star;&star;&star;&star;&star;</span>
+                <input type="radio" name="rating" value="5" required>
+            </label>
+            
+        </div>
+    </div>
 
-                <label>Date of Installation* <input type="date" name="date" id="date" required></label>
-            <div>
+                <label class="date-label">
+                    <div class="date">Date of Installation*</div> 
+                    <input type="date" name="date" id="date" required></label>
+            <div class="features">
                 Which features did you find useful in the products?* <br>
-                (Click all that apply)
+                <span>(Click all that apply)</span>
             </div>
-            <label><input type="checkbox" name="features" value="design"> Design</label>
+            <div class="feature-input">
+                            <label><input type="checkbox" name="features" value="design"> Design</label>
              <label><input type="checkbox" name="features" value="durability"> Durability</label>
              <label><input type="checkbox" name="features" value="ease"> Ease of use</label>
              <label> <input type="checkbox" name="features" value="performance"> Performance</label>
+            </div>
 
-             <div>Written Review (Optional)</div>
+             <div class="review">Written Review (Optional)</div>
              <label>
-                <textarea name="review" id="review" cols="30" rows="10" placeholder="Write your review"></textarea>
+                <textarea class="textarea" name="review" id="review" cols="30" rows="10" placeholder="Write your review"></textarea>
              </label>
 
-             <div>Your Name (Optional)</div>
+             <div class="name">Your Name (Optional)</div>
              <label><input type="text" name="fullname" id="fullname"></label>
             </fieldset>
             <input type="submit" value="Post Review">

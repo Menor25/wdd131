@@ -1,0 +1,21 @@
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+    main input[type="text"],
+    main input[type="email"],
+    main input[type="tel"],
+    main input[type="url"],
+    main input[type="date"],
+    main input[type="number"],
+    main select, .textarea {
+        width: 100% !important;
+        max-width: 60rem;
+    }
+
+
+    
+}

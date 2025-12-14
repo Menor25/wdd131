@@ -108,33 +108,34 @@
 
     /* Contact page style */
     .contact-section {
-                padding: 80px 40px;
-            }
+        padding: 80px 40px;
+    }
 
-            .contact-container {
-                padding: 60px 80px;
-            }
+    .contact-container {
+        padding: 60px 80px;
+    }
 
-            .contact-content {
-                flex-direction: row; /* Switch to two columns */
-                gap: 80px;
-            }
+    .contact-content {
+        flex-direction: row; 
+        gap: 80px;
+    }
 
-            .contact-info {
-                flex: 1; /* Takes up 1 part of the space */
-            }
+    .contact-info {
+        flex: 1; 
+    }
 
-            .contact-form-wrapper {
-                flex: 1.5; /* Takes up 1.5 parts, making it wider */
-            }
-            
-            /* On desktop, Budget and Subject are on the same row */
-            .form-row {
-                flex-direction: row;
-                gap: 40px;
-            }
-            
-            .form-row .form-group {
-                flex: 1;
-            }
+    .contact-form-wrapper {
+        flex: 1.5;
+    }
+    
+    .form-row {
+        flex-direction: row;
+        gap: 40px;
+    }
+    
+    .form-row .form-group {
+        flex: 1;
+    }
+
+    
 }

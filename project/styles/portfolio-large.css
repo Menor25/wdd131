@@ -72,4 +72,69 @@
     .stats-item {
         flex: 1 1 calc(33% - 14px); 
     }
+
+     .about-section {
+        padding: 100px 5%;
+    }
+
+    .about-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .about-image-wrapper {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    
+    .about-socials {
+        bottom: 40px;
+    }
+
+    .about-content {
+        flex: 1;
+        text-align: left;
+    }
+
+    .about-title {
+        font-size: 2.8rem;
+        max-width: 500px;
+    }
+
+    .about-buttons {
+        justify-content: flex-start;
+    }
+
+    /* Contact page style */
+    .contact-section {
+                padding: 80px 40px;
+            }
+
+            .contact-container {
+                padding: 60px 80px;
+            }
+
+            .contact-content {
+                flex-direction: row; /* Switch to two columns */
+                gap: 80px;
+            }
+
+            .contact-info {
+                flex: 1; /* Takes up 1 part of the space */
+            }
+
+            .contact-form-wrapper {
+                flex: 1.5; /* Takes up 1.5 parts, making it wider */
+            }
+            
+            /* On desktop, Budget and Subject are on the same row */
+            .form-row {
+                flex-direction: row;
+                gap: 40px;
+            }
+            
+            .form-row .form-group {
+                flex: 1;
+            }
 }

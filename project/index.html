@@ -3,29 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Theophilus Menor Portfolio</title>
+    <meta name="description" content="This is my portfolio website that shows all my skill set, projects and clients">
+    <meta name="author" content="Theophilus Ajiri Menor" />
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/portfolio-large.css">
+    <script src="script/porfolio.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo"></div>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <div class="header-logo">DevMenor</div>
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false">
+            <span class="nav-toggle-icon"></span>
+        </button>
+        <nav class="header-nav" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/">Home</a></li>
+                <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a href="services.html">Services</a></li>
+                <li class="nav-item nav-contact"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero-info">
-                <h1></h1>
-                <p></p>
-                <button></button>
+        <section class="hero-section">
+        
+            <div class="hero-content">
+                <h1 class="hero-title">Hello, I'm <br>Theophilus Menor</h1>
+                <p class="hero-description">
+                    I'm a Junior <span class="text-highlight">Web Designer</span> and <span class="text-highlight">Developer</span> based in Benin City,
+                    Nigeria. I strives to build immersive and beautiful web applications 
+                    through carefully crafted code and clean design.
+                </p>
+                <button class="hero-button">Say Hi!</button>
+
+                <div class="stats">
+                    <div class="stats-item">
+                        <span class="stats-number">1 Year</span>
+                        <span class="stats-text">Experience</span>
+                    </div>
+                    <div class="stats-item">
+                        <span class="stats-number">10+</span>
+                        <span class="stats-text">Projects Completed</span>
+                    </div>
+                    <div class="stats-item">
+                        <span class="stats-number">10</span>
+                        <span class="stats-text">Happy Clients</span>
+                    </div>
+                </div>
             </div>
-            <img src="" alt="" loading="lazy">
+
+            <div class="hero-image-container">
+                <img src="images/menor.jpeg" alt="Theophilus Menor" loading="lazy" class="hero-image">
+            </div>
+            
         </section>
+
+
         <section class="info">
             <div class="info-image">
                 <img src="" alt="" loading="lazy">
